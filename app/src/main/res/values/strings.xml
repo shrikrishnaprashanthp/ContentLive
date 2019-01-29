@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Content Live</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="login_btn">Login</string>
+    <string name="change_username">Change Username</string>
+    <string name="help">Help?</string>
+    <string name="press_for_touchid">Press for Touch ID</string>
+    <string name="for_support_help_contact">For Support/help contact:contentlive.support@primefocous.com</string>
+    <string name="for_copyright">&#169; Prime Focous Technologies,Inc All Rights Reserved</string>
 </resources>
