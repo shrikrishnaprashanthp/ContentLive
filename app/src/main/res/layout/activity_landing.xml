@@ -6,19 +6,19 @@
     <FrameLayout
         android:id="@+id/lyt_landing_fragment_wrapper"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal" />
 
     <FrameLayout
         android:id="@+id/lyt_video_fragment_wrapper"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal" />
 
     <FrameLayout
         android:id="@+id/lyt_login_fragment_wrapper"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal" />
 
 
