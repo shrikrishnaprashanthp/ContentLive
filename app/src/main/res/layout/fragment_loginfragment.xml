@@ -35,8 +35,11 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="45"
+                android:layout_weight="30"
                 android:padding="15dp"
+                android:hint="@string/user_id"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+                android:textSize="10dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:background="@drawable/roundedgradient"
@@ -46,9 +49,12 @@
                 android:layout_width="match_parent"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:textSize="10dp"
+                android:hint="@string/password"
                 android:background="@drawable/roundedgradient"
                 android:layout_height="0dp"
-                android:layout_weight="45"
+                android:layout_weight="30"
                 android:padding="15dp"
                 android:inputType="textPassword"
                 android:id="@+id/password"/>
@@ -78,6 +84,9 @@
                 android:layout_height="0dp"
                 android:layout_weight="45"
                 android:textAllCaps="false"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="22dp"
+                android:background="@drawable/roundedgradient"
                 android:text="@string/login_btn"
                 android:id="@+id/btn_login"/>
             <TextView
@@ -100,13 +109,16 @@
 
                 <Button
                     android:layout_width="0dp"
-                    android:layout_marginLeft="5dp"
+                    android:layout_marginLeft="20dp"
                     android:layout_weight="40"
+                    android:textSize="10dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/roundedgradient"
                     android:textAllCaps="false"
                     android:text="@string/change_username"
                     android:layout_marginTop="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:layout_height="match_parent" />
+                    android:layout_marginBottom="15dp"
+                    android:layout_height="wrap_content" />
 
                 <View
                     android:layout_marginTop="10dp"
@@ -117,12 +129,15 @@
                 <Button
                     android:layout_width="0dp"
                     android:layout_weight="40"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="10dp"
                     android:textAllCaps="false"
+                    android:background="@drawable/roundedgradient"
                     android:text="@string/help"
-                    android:layout_marginRight="5dp"
+                    android:layout_marginRight="20dp"
                     android:layout_marginTop="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:layout_height="match_parent"/>
+                    android:layout_marginBottom="15dp"
+                    android:layout_height="wrap_content"/>
 
             </LinearLayout>
 
