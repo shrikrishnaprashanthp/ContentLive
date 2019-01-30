@@ -24,7 +24,7 @@ public class LandingActivity extends AppCompatActivity {
     }
 
 
-    void initializeAllComponents() {
+    void initializeAllComponents()  {
         loadingframelayout = findViewById(R.id.lyt_login_fragment_wrapper);
 
         FragmentManager fragmentManager = getSupportFragmentManager();
