@@ -31,6 +31,7 @@ public class LoginFragment extends Fragment implements View.OnClickListener {
         username =  view.findViewById(R.id.user_id);
         password = view.findViewById(R.id.password);
         btnlogin = view.findViewById(R.id.btn_login);
+        btnlogin.setOnClickListener(this);
         //SharedPreferences settings = this.getActivity().getSharedPreferences("PREFS", 0);
        // notatki.setText(settings.getString("value", ""));
 
@@ -38,7 +39,7 @@ public class LoginFragment extends Fragment implements View.OnClickListener {
 
 
 
-        /*btnlogin.setOnClickListener(new View.OnClickListener() {
+      /*  btnlogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 loginInfo(username,password);
@@ -48,13 +49,14 @@ public class LoginFragment extends Fragment implements View.OnClickListener {
         return view; // return view here instead of notaki
     }
 
-    public void loginInfo(EditText username,EditText password){
-        String usernamestring=username.getText().toString();
-        String passwordstring=password.getText().toString();
 
-        if(usernamestring.isEmpty()){
+    private void loginInfo(EditText username,EditText password){
+        String usernameString=username.getText().toString();
+        String passwordString=password.getText().toString();
+
+        if(usernameString.isEmpty()){
             Toast.makeText(getActivity().getApplicationContext(),getActivity().getString(R.string.usernameempty),Toast.LENGTH_LONG).show();
-        }else if(passwordstring.isEmpty()){
+        }else if(passwordString.isEmpty()){
             Toast.makeText(getActivity().getApplicationContext(),getActivity().getString(R.string.passwordempty),Toast.LENGTH_LONG).show();
         }else {
 
@@ -77,6 +79,8 @@ public class LoginFragment extends Fragment implements View.OnClickListener {
 
             case R.id.btn_login:
             {
+                Toast.makeText(getActivity().getApplicationContext(), "Clicked", Toast.LENGTH_LONG).show();
+                loginInfo(username,password);
                 break;
             }
         }
